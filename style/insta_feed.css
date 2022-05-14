@@ -1,0 +1,60 @@
+.insta_maindiv_container > div {
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    margin-left: 20%;
+    gap: 10px;
+    margin-top:2%;
+}
+
+.post_container {
+    position: relative;
+}
+ 
+.post_container > img{
+    width:95%;
+    height: 300px;
+    padding-top: 10px;
+    border: 2px solid #0a0a0a;
+    border-radius: 10%;
+} 
+
+.btn_permalink_inst_feed {
+    background-color: #0977dd;
+    margin: 7px;
+    padding: 5px;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 2;
+    top: 220px;
+    left: 85px;
+    display: none;
+}
+
+.permalink_inst_feed {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.post_container>img:hover {
+    width: 100%;
+    border: 1px solid rgb(15, 2, 44);
+    opacity: 0.9;
+    background-color: rgb(235, 235, 235);
+    display:block;
+}
+
+.post_container:hover .btn_permalink_inst_feed {
+    display: block;
+}
+
+
+.heading_insta_feed {
+    font-size: 30px;
+    color: #0977dd;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2%;
+
+}
