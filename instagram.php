@@ -27,12 +27,12 @@ echo "<div class='insta_maindiv_container'>
         $permalink = isset($post["permalink"]) ? $post["permalink"] : "";
         $username = isset($post["username"]) ? $post["username"] : "";
         $caption = isset($post["caption"]) ? $post["caption"] : "";
-        echo "<div class='post_container'>
-        <img  src='{$media_url}' />
-        <strong>@{$username}</strong> {$caption}
-        <button class='btn_permalink_inst_feed'>
-        <a href='{$permalink}' class='permalink_inst_feed' target='_blank'>View on Instagram</a>
-        </button>
+        echo "<div class='insta_post_container'>
+            <img  src='{$media_url}' />
+            <strong>@{$username}</strong> {$caption}
+            <button class='btn_permalink_inst_feed'>
+            <a href='{$permalink}' class='permalink_inst_feed' target='_blank'>View on Instagram</a>
+            </button>
         </div>";
     }
 

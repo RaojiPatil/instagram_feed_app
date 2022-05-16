@@ -7,7 +7,7 @@
     margin-top:2%;
 }
 
-.post_container {
+.insta_post_container {
     position: relative;
 }
  
@@ -20,9 +20,8 @@ img{
 
 .btn_permalink_inst_feed {
     background-color: #0977dd;
-    margin: 7px;
-    padding: 5px;
-    border-radius: 10px;
+    padding: 7px;
+    border-radius: 6px;
     font-size: 16px;
     font-weight: 600;
     position: absolute;
@@ -37,7 +36,7 @@ img{
     color: white;
 }
 
-.post_container>img:hover {
+.insta_post_container>img:hover {
     width: 100%;
     opacity: 0.9;
     background-color: rgb(235, 235, 235);
@@ -49,7 +48,7 @@ img{
   
 }
 
-.post_container:hover .btn_permalink_inst_feed {
+.insta_post_container:hover .btn_permalink_inst_feed {
     display: block;
 }
 
