@@ -11,9 +11,9 @@
 
 <?php include('./assets/php/instagram.php') ?>
 
-
+<!-- heading of this app -->
 <div class='heading_insta_feed'>Instagram Feed</div>
-
+<!-- this is a parent class -->
 <div class='insta_maindiv_container'>
  
 <?php 
