@@ -39,7 +39,6 @@
 <!-- this is not working code -->
 
 <!-- <div class='insta_maindiv_container'>
-<div>
     <div class='insta_post_container'>
       
             <img src="<? //php echo $media_url ?>"/> 

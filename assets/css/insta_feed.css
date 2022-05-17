@@ -30,7 +30,7 @@ img{
     background-color: rgb(235, 235, 235);
     display:block;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    -webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+    -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
 }
 
