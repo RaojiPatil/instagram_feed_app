@@ -1,9 +1,4 @@
 <?php
-/**
- * DNG Loader.
- *
- * @package domain-name-generator
- */
 
 if ( ! class_exists( 'Class_Instagram' ) ) :
 
@@ -13,19 +8,9 @@ if ( ! class_exists( 'Class_Instagram' ) ) :
 	 */
 	class Class_Instagram {
 
-		/**
-		 * Instance
-		 *
-		 * @access private
-		 * @var object Class Instance.
-		 */
 		private static $instance;
 
-		/**
-		 * Initiator
-		 *
-		 * @return object initialized object of class.
-		 */
+		
 		public static function get_instance() {
 			if ( ! isset( self::$instance ) ) {
 				self::$instance = new self;
@@ -46,7 +31,6 @@ if ( ! class_exists( 'Class_Instagram' ) ) :
         /**
 		 * Include files
 		 *
-		 * @return void
 		 */
 		public function get_instagram_data() {
             $fields = "id,caption,media_url,permalink,thumbnail_url,username" ;
@@ -64,6 +48,7 @@ if ( ! class_exists( 'Class_Instagram' ) ) :
 		 *
 		 * @return void
 		 */
+		
 		public function feed_output() {
 
             $contents = $this->get_instagram_data();
