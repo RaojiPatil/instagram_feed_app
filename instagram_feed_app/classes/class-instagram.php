@@ -2,10 +2,6 @@
 
 if ( ! class_exists( 'Class_Instagram' ) ) :
 
-	/**
-	 * Class_Instagram
-	 *
-	 */
 	class Class_Instagram {
 
 		private static $instance;
@@ -17,20 +13,13 @@ if ( ! class_exists( 'Class_Instagram' ) ) :
 			return self::$instance;
 		}
 
-		/**
-		 * Constructor
-		 *
-		 */
 		public function __construct() {
 
 			$this->feed_output();
 
 		}
 
-        /**
-		 * Include files
-		 *
-		 */
+
 		public function get_instagram_data() {
             $fields = "id,caption,media_url,permalink,thumbnail_url,username" ;
             $token = "IGQVJWYmVCSFl3M0NDeGVnN0ZAiM1RvTTZAwT1k2Q1hxd2JtaEpYWWJSeUcySHpWN0ZAJcHdSLXNxY2VKRFg2d1JEZADFWVC0xZAVdveGpqRS1mdVI5RGNBenRoS1Y3WkVFZAXVlTkdnX0U1MFVGSFdYenA5NwZDZD";
@@ -41,13 +30,6 @@ if ( ! class_exists( 'Class_Instagram' ) ) :
             return $contents;
         }       
         
-
-		/**
-		 * Include files
-		 *
-		 * @return void
-		 */
-		
 		public function feed_output() {
 
             $contents = $this->get_instagram_data();
