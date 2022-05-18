@@ -10,7 +10,6 @@ if ( ! class_exists( 'Class_Instagram' ) ) :
 
 		private static $instance;
 
-		
 		public static function get_instance() {
 			if ( ! isset( self::$instance ) ) {
 				self::$instance = new self;
@@ -66,14 +65,14 @@ if ( ! class_exists( 'Class_Instagram' ) ) :
                             $media_url = isset( $post[ "media_url" ] ) ? $post["media_url"] :"";
                             $permalink = isset($post["permalink"]) ? $post["permalink"] : "";
                             $username = isset($post["username"]) ? $post["username"] : "";
-                            $caption = isset($post["caption"]) ? $post["caption"] : "";
 
                             ?>
                             
                             <div class='insta_post_container'>
-                                <a href='<?php echo $permalink; ?>' >
-                                <img src='<?php echo $media_url; ?>' />  </a>
-                                <strong class="username">@ <?php echo $username; ?></strong>                 
+                                <a href='<?php echo $permalink; ?>' target='_blank' >
+                                <img src='<?php echo $media_url; ?>' />  
+                                <strong class="username">@ <?php echo $username; ?></strong>
+                                </a>                 
                             </div>
 
                             <?php
