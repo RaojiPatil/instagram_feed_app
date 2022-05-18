@@ -7,9 +7,7 @@
     margin-top:1%;
 }
 
-.insta_post_container {
-    position: relative;
-}
+
 .insta_post_container > a {
     text-decoration: none;
     color: black;
@@ -48,7 +46,7 @@ img{
 
 }
 
-.username {
+.insta_username {
     margin-left: 25%;
     background-color: rgb(227, 231, 231);
     padding: 3px;

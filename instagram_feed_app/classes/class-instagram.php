@@ -71,7 +71,7 @@ if ( ! class_exists( 'Class_Instagram' ) ) :
                             <div class='insta_post_container'>
                                 <a href='<?php echo $permalink; ?>' target='_blank' >
                                 <img src='<?php echo $media_url; ?>' />  
-                                <strong class="username">@ <?php echo $username; ?></strong>
+                                <strong class="insta_username">@ <?php echo $username; ?></strong>
                                 </a>                 
                             </div>
 
