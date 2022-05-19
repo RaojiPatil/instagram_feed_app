@@ -10,7 +10,7 @@ if(isset($_POST['submit'])) {
     $gender = $_post['gender'];
 }
 
-$sql = "INSERT INTO `user` ('firstname', 'lastname', 'email', 'password', 'gender')VALUES('$firstname', '$lastname', '$email', '$password', '$gender')";
+$sql = "INSERT INTO `user` (firstname, lastname, email, password, gender)VALUES('$firstname', '$lastname', '$email', '$password', '$gender')";
 
 $result = $conn->query($sql);
 
